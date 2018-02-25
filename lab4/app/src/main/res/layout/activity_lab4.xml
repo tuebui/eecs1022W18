@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customerservice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eecs1022.lab4.Lab4Activity">
+
+    <Button
+        android:id="@+id/createAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cusservice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"
+        android:onClick="createAccountsButtonClicked"
+        android:text="Create Accounts"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <TextView
+        android:id="@+id/fixservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cusservice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Service:"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <Spinner
+        android:id="@+id/cusservice"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/fixfrom"
+        android:layout_toRightOf="@+id/fixfrom"
+        android:entries="@array/service"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <TextView
+        android:id="@+id/fixfrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fromAccount"
+        android:layout_alignBottom="@+id/fromAccount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="From Account Owner:"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <TextView
+        android:id="@+id/fixto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toAccount"
+        android:layout_alignBottom="@+id/toAccount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="To Account Owner: "
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <Spinner
+        android:id="@+id/fromAccount"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_above="@+id/toAccount"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@+id/fixfrom"
+        android:layout_toRightOf="@+id/fixfrom"
+        android:entries="@array/Client"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <Spinner
+        android:id="@+id/toAccount"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_above="@+id/amountofmoney"
+        android:layout_toEndOf="@+id/fixfrom"
+        android:layout_toRightOf="@+id/fixfrom"
+        android:entries="@array/Client"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <Button
+        android:id="@+id/completeTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="190dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:onClick="completeTransactionButtonClicked"
+        android:text="Complete Transaction"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="335dp" />
+
+    <TextView
+        android:id="@+id/fixAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/amountofmoney"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Amount: "
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <EditText
+        android:id="@+id/amountofmoney"
+        android:layout_width="328dp"
+        android:layout_height="26dp"
+        android:layout_above="@+id/completeTransaction"
+        android:layout_marginBottom="17dp"
+        android:layout_toEndOf="@+id/fixfrom"
+        android:layout_toRightOf="@+id/fixfrom"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <TextView
+        android:id="@+id/statusClient1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_above="@+id/statusClient2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="394dp" />
+
+    <TextView
+        android:id="@+id/statusClient2"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_above="@+id/statusClient3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <TextView
+        android:id="@+id/statusClient3"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="62dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <TextView
+        android:id="@+id/fixname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Name of Client 1:" />
+
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fixname1"
+        android:layout_alignBottom="@+id/fixname1"
+        android:layout_toEndOf="@+id/fixto"
+        android:layout_toRightOf="@+id/fixto"
+        android:ems="10"
+        android:inputType="textPersonName|number|numberDecimal" />
+
+    <TextView
+        android:id="@+id/fixmoney1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/name1"
+        android:layout_marginTop="15dp"
+        android:text="Initial Balance of Client 1:" />
+
+    <EditText
+        android:id="@+id/money1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fixmoney1"
+        android:layout_alignBottom="@+id/fixmoney1"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/fixmoney1"
+        android:layout_toRightOf="@+id/fixmoney1"
+        android:ems="10"
+        android:inputType="textPersonName|number|numberDecimal" />
+
+</RelativeLayout>

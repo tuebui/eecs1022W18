@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">W18</string>
+    <string-array name="service">
+        <item>Deposit</item>
+        <item>Withdraw</item>
+        <item>Transfer</item>
+    </string-array>
+
+    <string-array name="Client">
+        <item>   </item>
+        <item>Client 1</item>
+        <item>Client 2</item>
+        <item>Client 3</item>
+    </string-array>
+</resources>
