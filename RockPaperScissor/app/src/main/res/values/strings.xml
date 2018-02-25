@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">RockPaperScissor</string>
-    <string-array name="choices">
-        <item>Rock</item>
-        <item>Paper</item>
-        <item>Scissor</item>
-    </string-array>
-</resources>

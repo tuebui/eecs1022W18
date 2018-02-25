@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Tue</string>
-    <string-array name="string">
-        <item>item1</item>
-        <item>item2</item>
-        <item>item3</item>
-    </string-array>
-</resources>
